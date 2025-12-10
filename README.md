@@ -30,7 +30,7 @@ StreamFlow adalah aplikasi live streaming yang memungkinkan kamu melakukan live 
 Untuk instalasi otomatis, jalankan perintah berikut:
 
 ```bash
-curl -o install.sh https://raw.githubusercontent.com/bandioke/streamflowupdate/main/install.sh && chmod +x install.sh && ./install.sh
+curl -o install.sh https://raw.githubusercontent.com/bandioke/streamflow/main/install.sh && chmod +x install.sh && ./install.sh
 ```
 
 ## 🔧 Manual Installation
@@ -147,35 +147,46 @@ pm2 start app.js --name streamflow
 ```
 
 **Setup Auto-Restart saat Server Reboot:**
-```bash
+
 # Simpan konfigurasi PM2 saat ini
+```bash
 pm2 save
-
+```
 # Setup PM2 untuk auto-start saat server restart
+```bash
 pm2 startup
-
+```
+```bash
 # Ikuti instruksi yang muncul, biasanya berupa command yang harus dijalankan dengan sudo
 # Contoh output: sudo env PATH=$PATH:/usr/bin /usr/lib/node_modules/pm2/bin/pm2 startup systemd -u username --hp /home/username
-
+```
 # Setelah menjalankan command startup, save kembali
+```bash
 pm2 save
 ```
 
 **Perintah PM2 Berguna:**
-```bash
+
 # Lihat status aplikasi
+
+```bash
 pm2 status
-
+```
 # Restart aplikasi
+
+```bash
 pm2 restart streamflow
-
+```
 # Stop aplikasi
+```bash
 pm2 stop streamflow
-
+```
 # Lihat logs aplikasi
+```bash
 pm2 logs streamflow
-
+```
 # Monitor resource usage
+```bash
 pm2 monit
 ```
 
