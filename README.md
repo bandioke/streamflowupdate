@@ -73,7 +73,7 @@ sudo apt install git -y
 
 Clone repository:
 ```bash
-git clone https://github.com/bandioke/streamflowupdate
+git clone https://github.com/bandioke/streamflow
 ```
 
 Masuk ke direktori project:
@@ -303,11 +303,11 @@ pm2 restart streamflow
 
 ## 💫 Contributors
 
-[![Contributors](https://contrib.rocks/image?repo=bandioke/streamflowupdate)](https://github.com/bandioke/streamflowupdate/graphs/contributors)
+[![Contributors](https://contrib.rocks/image?repo=bandioke/streamflowupdate)](https://github.com/bandioke/streamflow/graphs/contributors)
 
 ## 📄 License
 
-[![MIT License](https://img.shields.io/badge/License-MIT-green.svg)](https://github.com/bandioke/streamflowupdate/blob/main/LICENSE)
+[![MIT License](https://img.shields.io/badge/License-MIT-green.svg)](https://github.com/bandioke/streamflow/blob/main/LICENSE)
 
 ---
 
